@@ -24,6 +24,7 @@ echo -e "description: $moduleDescription"
 
 echo -e "Removing boilerplate files..."
 cd $dir
+rm -rf .git
 rm -f README.md
 rm -f -- "$0"
 
