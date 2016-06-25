@@ -81,7 +81,7 @@ gulp.task('serve', () => {
   gulp.watch(['src/**/*.js', 'test.js', 'index.html', 'test.css'], ['eslint']).on('change', reload);
 });
 
-gulp.task('serve:docs', ['jsdoc'] () => {
+gulp.task('serve:docs', ['jsdoc'], () => {
   browserSync({
     notify: true,
     port: 9002,
