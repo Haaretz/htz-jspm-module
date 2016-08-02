@@ -12,6 +12,7 @@ module.exports = {
   },
   "rules": {
     "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
     "brace-style": [2, "stroustrup", { "allowSingleLine": true  }],
     /* Warn about long line */
     "max-len": [1, 100, 2],

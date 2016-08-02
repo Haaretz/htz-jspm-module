@@ -46,8 +46,5 @@ cd ..
 mv $dir $moduleSafeName
 cd $moduleSafeName
 
-# Init git 
-git init
-
-# Install npm dependancy
-npm i
+# Initialize
+npm run init
