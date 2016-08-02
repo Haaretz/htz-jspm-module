@@ -8,7 +8,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "init": "git init && npm i && jspm install",
+    "init": "git init && npm i",
+    "post-install": "jspm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -21,6 +22,7 @@
     "del": "^2.2.0",
     "eslint-config-airbnb": "^10.0.0",
     "eslint-plugin-import": "^1.8.1",
+    "git-hooks": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
     "gulp-if": "^2.0.0",
