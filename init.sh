@@ -18,6 +18,7 @@ read -p "${magenta}Please describe what your module does${normal}: " moduleDescr
 moduleSafeName=$(echo "$moduleName" | sed -r "s/\s+/-/g")
 moduleNaturalName=$(echo "$moduleName" | sed -r "s/-+/ /g")
 moduleUppercaseName=$(echo "$moduleNaturalName" | tr '[:lower:]' '[:upper:]')
+moduleCamelCaseName=$(echo "$moduleSafeName" | sed -r 's/-([a-zA-Z])/\U\1/g')
 
 # echo -e "\nGood, your module name is "${magenta}$moduleName${normal}"\n"
 echo -e "description: $moduleDescription"
@@ -39,6 +40,7 @@ rm -rf boilerplate
 find ./ -type f -print0 | xargs -0 sed -i "s/<%= moduleNaturalName %>/$moduleNaturalName/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/<%= moduleSafeName %>/$moduleSafeName/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/<%= moduleUppercaseName %>/$moduleUppercaseName/g"
+find ./ -type f -print0 | xargs -0 sed -i "s/<%= moduleCamelCaseName %>/$moduleCamelCaseName/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/<%= moduleDescription %>/$moduleDescription/g"
 
 echo -e "Renaming project directory..."
