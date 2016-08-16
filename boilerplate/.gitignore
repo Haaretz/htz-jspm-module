@@ -15,3 +15,6 @@ jspm_packages
 
 # Ignore ternjs port
 .tern-port
+
+# Ignore IDE metadata
+.idea/*

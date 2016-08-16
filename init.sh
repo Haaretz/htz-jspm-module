@@ -24,8 +24,9 @@ echo -e "description: $moduleDescription"
 
 echo -e "Removing boilerplate files..."
 cd $dir
-rm -rf .git
+#rm -rf .git ## skip for testing purposes
 rm -f README.md
+rm -f .gitignore
 rm -f -- "$0"
 
 echo -e "Copying files..."
