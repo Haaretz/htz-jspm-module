@@ -16,6 +16,7 @@ module.exports = {
   "rules": {
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/extensions": [1, "never", {"json": "always"}],
 
     "brace-style": [2, "stroustrup", { "allowSingleLine": true  }],
     /* Warn about long line */
