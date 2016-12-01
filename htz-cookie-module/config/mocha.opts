@@ -1,0 +1,10 @@
+./specs/**/*spec.browser.js
+./specs/**/*spec.server.js
+
+--require ./config/setup/dom.js
+--reporter spec
+--ui bdd
+--compilers js:babel-core/register
+--recursive
+--timeout 15000
+--bail
