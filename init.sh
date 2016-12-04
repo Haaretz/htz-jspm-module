@@ -64,7 +64,9 @@ init() {
   rm -f -- "$0"
 
   echo -e "Copying files..."
-  mv boilerplate/{*,.[A-Za-z0-9]*} ..
+  cd boilerplate
+  mv * .[A-Za-z0-9]* ..
+  cd ..
   rm -rf boilerplate
 
   after
