@@ -2,7 +2,7 @@ SystemJS.config({
   paths: {
     "github:": "jspm_packages/github/",
     "npm:": "jspm_packages/npm/",
-    "htz-npm-only/": "src/"
+    "<%= moduleSafeName %>/": "src/"
   },
   devConfig: {
     "map": {
@@ -26,7 +26,7 @@ SystemJS.config({
   },
   transpiler: "babel",
   packages: {
-    "htz-npm-only": {
+    "<%= moduleSafeName %>": {
       "main": "index.js",
       "meta": {
         "*.js": {
