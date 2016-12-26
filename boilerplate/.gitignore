@@ -15,3 +15,9 @@ jspm_packages
 
 # Ignore ternjs port
 .tern-port
+
+# Ignore IDE metadata
+.idea/*
+
+# Ignore MacOS store
+.DS_Store
